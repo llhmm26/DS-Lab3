@@ -1,0 +1,9 @@
+install.packages('cowplot')
+library(ggplot2)
+library(dplyr)
+library(cowplot)
+ggplot(titanic_train, aes(Age)) +
+  geom_histogram(color = "#000000", fill = "#0099F8") +
+  ggtitle("Variable distribution") +
+  theme_classic() +
+  theme(plot.title = element_text(size = 18))
